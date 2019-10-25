@@ -11,7 +11,7 @@
     "@firebase/testing": "0.14.1",
     "@types/mocha": "5.2.7",
     "filesystem": "1.0.1",
-    "mocha": "5.2.0",
+    "mocha": "6.2.2",
     "mocha-typescript": "1.1.17",
     "prettier": "1.15.2",
     "source-map-support": "0.5.9",
