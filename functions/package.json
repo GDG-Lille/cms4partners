@@ -20,7 +20,7 @@
         "firebase-admin": "8.7.0",
         "firebase-functions": "3.3.0",
         "generate-password": "^1.4.2",
-        "markdown-pdf": "8.1.1",
+        "markdown-pdf": "9.0.0",
         "node-mailjet": "3.3.1"
     },
     "devDependencies": {
