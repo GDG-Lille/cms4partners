@@ -24,7 +24,7 @@
         "node-mailjet": "3.3.1"
     },
     "devDependencies": {
-        "@types/jest": "24.0.21",
+        "@types/jest": "24.9.1",
         "@types/node": "12.12.5",
         "babel-jest": "25.1.0",
         "jest": "25.1.0",
