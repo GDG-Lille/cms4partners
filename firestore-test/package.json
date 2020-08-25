@@ -6,7 +6,7 @@
         "test": "jest --testTimeout=10000"
     },
     "devDependencies": {
-        "@firebase/testing": "0.14.2",
+        "@firebase/testing": "0.20.11",
         "babel-jest": "25.1.0",
         "filesystem": "1.0.1",
         "jest": "25.1.0",
