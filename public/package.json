@@ -27,7 +27,7 @@
         "bulma": "0.8.0",
         "bulma-timeline": "^3.0.4",
         "date-fns": "^2.7.0",
-        "firebase": "7.2.3",
+        "firebase": "7.24.0",
         "rxjs": "6.4.0",
         "tslib": "1.10.0",
         "zone.js": "0.10.2"
