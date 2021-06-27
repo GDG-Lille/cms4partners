@@ -3,7 +3,7 @@ export default ({ sponsoring }: any, sponsor_reservation_end_date: string, addre
     body: `
 Bonjour
 <br><br>
-Bonne nouvelle ! Votre demande de pack ${sponsoring} pour le Devfest Lille 2020 a été validé.
+Bonne nouvelle ! Votre demande de pack ${sponsoring} pour le Devfest Lille 2021 a été validé.
 <br><br>
 Vous trouverez la convention pour ce partenariat à nous retourner signée ainsi que la facture proforma à acquitter sur votre espace dédié ${address_cms4devfest}. 
 <br><br>
@@ -17,6 +17,6 @@ Nous restons à votre disposition pour tout complément via l'adresse email cont
 <br><br>
 Cordialement     
 <br><br>
-L'équipe du Devfest Lille 2020
+L'équipe du Devfest Lille 2021
     `
 });

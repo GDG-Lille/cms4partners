@@ -13,7 +13,7 @@ export async function storeFile(cloudStorageDest, tempPath) {
         .storage()
         .bucket()
         .file(cloudStorageDest + tempPath)
-        .getSignedUrl({ action: 'read', expires: '03-17-2025' });
+        .getSignedUrl({ action: 'read', expires: '03-17-2026' });
 }
 export async function generateAndStoreProformaInvoiceAndConvention(
     firestore: FirebaseFirestore.Firestore,
@@ -57,13 +57,13 @@ export async function generateAndStoreInvoice(firestore: FirebaseFirestore.Fires
 export async function generateInvoiceNumber(firestore: FirebaseFirestore.Firestore, id: string) {
     console.log('Generate Invoice Number');
     const invoiceNumber = await firestore
-        .doc('configuration/invoice_2020')
+        .doc('configuration/invoice_2021')
         .get()
         .then(invoice => {
             return (invoice.data() as any).value;
         });
 
-    const formattedNumber = '2020_' + invoiceNumber.padStart(3, '0');
+    const formattedNumber = '2021_' + invoiceNumber.padStart(3, '0');
 
     await firestore
         .doc('companies/' + id)
@@ -73,7 +73,7 @@ export async function generateInvoiceNumber(firestore: FirebaseFirestore.Firesto
         .catch(err => console.error(err));
 
     return await firestore
-        .doc('configuration/invoice_2020')
+        .doc('configuration/invoice_2021')
         .update({
             value: (parseInt(invoiceNumber, 10) + 1).toString()
         })

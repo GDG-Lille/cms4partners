@@ -23,9 +23,9 @@ function getSponsoringFees(sponsoring): [string, number, number] {
         case 'Bronze':
             return ['mille euros', 1000, 4];
         case 'Silver':
-            return ['deux mille cinq cents euros', 2500, 6];
+            return ['deux mille euros', 2000, 6];
         default:
-            return ['cinq milles euros', 5000, 10];
+            return ['quatre milles euros', 4000, 10];
     }
 }
 
@@ -62,6 +62,7 @@ function generateFile(config, fileName, fileFr, fileEn, settings) {
                 .to(os.tmpdir() + '/' + fileName, err => {
                     if (err) {
                         console.error(err);
+                        throw err
                     }
                     resolve(fileName);
                 });

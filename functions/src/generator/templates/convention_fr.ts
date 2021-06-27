@@ -22,11 +22,11 @@ D’une manière générale, l'association s’engage à donner une forte visibi
 - Logo partenaire sur le site web https://devfest.gdglille.org
 - Communication sur les réseaux sociaux : Twitter et LinkedIN
 - Présence sur tous les supports de communication (flyers et affiches)
-- <%= NUMBER_PLACE %> entrées gratuites, à récupérer avant le 1 juin
-<% if (SPONSORING === 'Gold') { %>- 3 entrées stand, à récupérer avant le 1 juin <% } %>
-<% if (SPONSORING === 'Silver') { %>- 2 entrées stand, à récupérer avant le 1 juin <% } %>
+- <%= NUMBER_PLACE %> entrées gratuites, à récupérer avant le 1 Novembre
+<% if (SPONSORING === 'Gold') { %>- 3 entrées stand, à récupérer avant le 1 Novembre <% } %>
 <% if (SPONSORING === 'Gold') { %>- Logo sur les vidéos publiées sur Youtube<% } %>
 <% if (SPONSORING === 'Gold') { %>- Stand (9m²) le jour de la conférence<% } %>
+<% if (SPONSORING === 'Silver') { %>- 2 entrées stand, à récupérer avant le 1 Novembre <% } %>
 <% if (SPONSORING === 'Silver') { %>- Stand (6m²) le jour de la conférence<% } %>
 <% if (SIRET === '81857287700020') { %>- Table (1m2) le jour de la conférence<% } %>
 <% if (SIRET === '81857287700020') { %>- Possibilité d'avoir 1m2 supplémentaire pour faire des interviews et/ou un job board.<% } %>
@@ -44,7 +44,7 @@ Comme indiqué sur le devis, vous trouverez ci-dessous les informations bancaire
 - BIC CMCIFRPP
 
 <% if (SPONSORING !== 'Bronze' || SIRET === '81857287700020' ) { %>
-Le partenaire s'engage à installer son stand le jeudi 11 juin après-midi. Une équipe de sécurité sera présente dans la nuit du 11 au 12 juin pour surveiller la zone d'expositions. 
+Le partenaire s'engage à installer son stand le jeudi 18 Novembre après-midi. Une équipe de sécurité sera présente dans la nuit du 18 au 19 Novembre pour surveiller la zone d'expositions. 
 <% } %>
 
 <% if (SIRET === '81857287700020') { %>

@@ -23,14 +23,15 @@ Broadly, the Association is committed to give the Partner a large visibility on 
 - The Partner's logo on the web site  https://devfest.gdglille.org
 - Communication on social media: Twitter and LinkedIN
 - Presence on every communication support (flyers and posters)
-- <%= NUMBER_PLACE %> free tickets, to get before the June the 1st
-<% if (SPONSORING === 'Gold') { %>- 3 stand tickets, to get before the June the 1st <% } %>
-<% if (SPONSORING === 'Silver') { %>- 2 stand tickets, to get before the June the 1st <% } %>
+- <%= NUMBER_PLACE %> free tickets, to get before the November the 1th
+<% if (SPONSORING === 'Gold') { %>- 3 stand tickets, to get before the November the 1st <% } %>
 <% if (SPONSORING === 'Gold') { %>- Logo on published YouTube videos<% } %>
-<% if (SPONSORING === 'Gold') { %>- An unique booth (9m²)on the conference day<% } %>
+<% if (SPONSORING === 'Gold') { %>- An unique booth (9m²) on the conference day<% } %>
+<% if (SPONSORING === 'Silver') { %>- 2 stand tickets, to get before the November the 1st <% } %>
 <% if (SPONSORING === 'Silver') { %>- An unique booth (6m²) on the conference day<% } %>
-
-<% if (SPONSORING !== 'Silver') { %>
+<% if (SIRET === '81857287700020') { %>- Table (1m2) day of the conference<% } %>
+<% if (SIRET === '81857287700020') { %>- Can have 1m2 for interviews and/or job board.<% } %>
+<% if (SPONSORING !== 'Bronze' || SIRET === '81857287700020') { %>
 The Association is committed to provide to the Partner an electrical power strip, a table and two chairs. The rest will be the responsibility of the Partner.
 <% } %>
 
@@ -46,7 +47,7 @@ As indicated in the invoice, here are the Banking Information of the association
 - BIC CMCIFRPP
 
 <% if (SPONSORING !== 'Bsronze') { %>
-The Partner is committed to install its stand on June, the 11th. A security team will be present the night of the 11th of June in the exhibition room.
+The Partner is committed to install its stand on November, the 18th. A security team will be present the night of the 18th of November in the exhibition room.
 <% } %>
 
 **DURATION OF THE AGREEMENT**

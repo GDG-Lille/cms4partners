@@ -12,7 +12,7 @@ files.generateAndStoreProformaInvoiceAndConvention = jest.fn();
 
 const settings = {
     convention: {
-        edition: 2020
+        edition: 2021
     },
     gdg: {},
     hosting: {}
